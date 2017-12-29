@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    .media
+        .media-left.media-top
+            img.media-object(src='images/img_avatar1.png', style='width:80px')
+        .media-body
+            h4.media-heading #{user.name}
+            p
+                | Email: #{user.email}
+            p
+                | Username: #{user.username}
+            p
+                | AccountId: #{user._id}
